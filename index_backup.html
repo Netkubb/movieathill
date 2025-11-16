@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="th"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.movieathill.com/">
+    <meta property="og:title" content="Movie@Hill | December 2025: Chill & Beer Under the Stars">
+    <meta property="og:description" content="Join us for a festive open-air cinema experience! Check the schedule for holiday classics and blockbuster hits. Early Bird tickets available now.">
+    <meta property="og:image" content="https://www.movieathill.com/images/og-preview-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Movie@Hill | December 2025 Schedule">
+    <meta name="twitter:description" content="Festive open-air cinema is back! See the December lineup (Classics, Blockbusters) and grab your Early Bird tickets.">
+    <meta name="twitter:image" content="https://www.movieathill.com/images/og-preview-image.jpg">
+    
+    <link rel="icon" href="/favicon.ico?v=1.0" type="image/x-icon">
+    <title>Movie@Hill | ตารางฉายเดือนธันวาคม 2025 (December 2025 Schedule)</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Sarabun:wght@100;400;600;700&display=swap');
+        
+        :root {
+            --primary-accent: #E8594C;
+            --background-base: #F9FAFB;
+            --text-dark: #1F2937;
+            --secondary-light: #E5E7EB;
+        }
+
+        .font-oswald { font-family: 'Oswald', sans-serif; }
+        .font-inter { font-family: 'Inter', 'Sarabun', sans-serif; }
+        .font-body { font-family: 'Sarabun', 'Inter', sans-serif; }
+
+        /* Custom utility for English content to be hidden by default (will be toggled by JS) */
+        /* --- CHANGED: Hiding EN by default now --- */
+        .lang-en { display: none; } 
+        
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--background-base); }
+        ::-webkit-scrollbar-thumb { background: var(--primary-accent); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D54F42; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-accent': 'var(--primary-accent)',
+                        'base-bg': 'var(--background-base)',
+                        'text-color': 'var(--text-dark)',
+                    },
+                    borderRadius: {
+                        'xl': '0.75rem',
+                    },
+                    fontFamily: {
+                        sans: ['Sarabun', 'Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-base-bg text-text-color min-h-screen font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-10 border-b border-secondary-light">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <h1 class="text-3xl sm:text-4xl font-heading uppercase tracking-widest text-text-color">
+                Movie<span class="text-primary-accent">@</span>Hill
+            </h1>
+            
+            <div class="flex items-center space-x-3">
+                <div class="flex border border-gray-300 rounded-lg overflow-hidden">
+                    <button id="lang-en-btn" onclick="setLanguage('en')" class="px-3 py-1 text-sm font-semibold transition duration-200 bg-white text-text-color hover:bg-gray-100">
+                        EN
+                    </button>
+                    <button id="lang-th-btn" onclick="setLanguage('th')" class="px-3 py-1 text-sm font-semibold transition duration-200 bg-primary-accent text-white hover:bg-red-600">
+                        TH
+                    </button>
+                </div>
+
+                <a href="#registration" class="px-4 py-2 bg-primary-accent text-white font-semibold rounded-lg transition duration-300 hover:bg-red-600 shadow-md text-sm sm:text-base">
+                    <span class="lang-en">Register Now</span>
+                    <span class="lang-th">ลงทะเบียนเลย</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-4 sm:p-8 lg:p-12">
+
+        <section class="text-center mb-10 bg-white p-8 rounded-xl shadow-lg border-t-4 border-primary-accent">
+            <h2 class="text-3xl sm:text-4xl font-heading font-semibold tracking-wide mb-3 text-text-color uppercase">
+                <span class="lang-th">ตารางฉายเดือนธันวาคม 2025</span>
+                <span class="lang-en">DECEMBER 2025 SCHEDULE</span>
+            </h2>
+            <p class="text-lg text-gray-600 font-body">
+                <span class="lang-th">ประสบการณ์ดูหนังกลางแปลงสุดชิล: พักผ่อน & จิบเบียร์ใต้แสงดาว</span>
+                <span class="lang-en">A clean cinema experience: Chill & Beer under the stars.</span>
+            </p>
+        </section>
+        
+        <section id="pricing" class="mb-10">
+            <h2 class="text-xl font-heading uppercase text-center mb-6 text-primary-accent font-semibold">
+                <span class="lang-th">ราคาบัตร</span>
+                <span class="lang-en">PRICING</span>
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12 max-w-4xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg flex-1 max-w-sm mx-auto w-full border border-secondary-light hover:border-primary-accent transition duration-300">
+                    <h3 class="text-2xl font-heading mb-2 text-text-color uppercase">
+                        <span class="lang-en">Early Bird</span>
+                        <span class="lang-th">Early Bird (ซื้อล่วงหน้า)</span>
+                    </h3>
+                    <p class="text-4xl font-bold mb-3 text-primary-accent">
+                        200 ฿<span class="text-lg text-gray-500 font-body">/ 
+                            <span class="lang-en">person</span>
+                            <span class="lang-th">ท่าน</span>
+                        </span>
+                    </p>
+                    <p class="text-gray-600 font-body">
+                        <span class="lang-en">Secure your spot online before the event day.</span>
+                        <span class="lang-th">จองที่นั่งของคุณทางออนไลน์ก่อนวันฉายจริง.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg flex-1 max-w-sm mx-auto w-full border border-secondary-light hover:border-primary-accent transition duration-300">
+                    <h3 class="text-2xl font-heading mb-2 text-text-color uppercase">
+                        <span class="lang-en">Walk-in</span>
+                        <span class="lang-th">Walk-in (ซื้อหน้างาน)</span>
+                    </h3>
+                    <p class="text-4xl font-bold mb-3 text-primary-accent">
+                        250 ฿<span class="text-lg text-gray-500 font-body">/ 
+                            <span class="lang-en">person</span>
+                            <span class="lang-th">ท่าน</span>
+                        </span>
+                    </p>
+                    <p class="text-gray-600 font-body">
+                        <span class="lang-en">Available at the gate, subject to seating availability.</span>
+                        <span class="lang-th">ซื้อได้ที่หน้างาน (จำนวนจำกัด).</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="mb-10">
+            <h2 class="text-xl font-heading uppercase text-center mb-6 text-primary-accent font-semibold">
+                <span class="lang-th">ภาพยนตร์ประจำเดือนธันวาคม 2025</span>
+                <span class="lang-en">DECEMBER 2025 LINEUP</span>
+            </h2>
+            
+            <div class="bg-white p-4 sm:p-8 rounded-xl shadow-lg border border-secondary-light">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    
+                    <script>
+                        // --- JAVASCRIPT FOR MOVIE CARDS AND LANGUAGE TOGGLE ---
+                        
+                        // Language function (called by buttons)
+                        function setLanguage(lang) {
+                            // Hide all elements
+                            document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+                            document.querySelectorAll('.lang-th').forEach(el => el.style.display = 'none');
+
+                            // Show elements for selected language
+                            const displayStyle = (lang === 'en' || lang === 'th') ? 'inline' : 'block';
+                            document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = el.tagName === 'SPAN' || el.tagName === 'A' ? displayStyle : 'block');
+                            
+                            // Style buttons
+                            document.getElementById('lang-en-btn').className = lang === 'en' ? 'px-3 py-1 text-sm font-semibold transition duration-200 bg-primary-accent text-white hover:bg-red-600' : 'px-3 py-1 text-sm font-semibold transition duration-200 bg-white text-text-color hover:bg-gray-100';
+                            document.getElementById('lang-th-btn').className = lang === 'th' ? 'px-3 py-1 text-sm font-semibold transition duration-200 bg-primary-accent text-white hover:bg-red-600' : 'px-3 py-1 text-sm font-semibold transition duration-200 bg-white text-text-color hover:bg-gray-100';
+
+                            // Re-render schedule grid to ensure dynamic elements use the correct language
+                            renderSchedule(lang);
+
+                            // Store preference in localStorage
+                            localStorage.setItem('movieathill_lang', lang);
+                        }
+
+                        // Function to create movie card HTML
+                        function createMovieItem(date, movie, isHoliday = false, lang = 'th') { // <-- Default language for function is now 'th'
+                            const isStarred = movie.includes('*');
+                            let movieName = movie.replace('*', '').trim();
+                            let day = date.replace(/[0-9]/g, '').trim();
+                            let dateNum = date.replace(/[^0-9]/g, '').trim();
+                            
+                            let classes = "p-4 rounded-lg border-l-4 ";
+                            let borderColor = isHoliday ? 'border-primary-accent' : 'border-gray-300';
+                            let bgColor = isStarred ? 'bg-gray-50' : 'bg-white'; 
+                            let dateColor = isHoliday ? 'text-primary-accent' : 'text-gray-500';
+                            
+                            // Dynamic text based on selected language
+                            let starTagText = lang === 'th' 
+                                ? 'ภาพยนตร์ครอบครัว/วันหยุด' 
+                                : 'Family/Holiday Movie';
+                            let holidayTagText = lang === 'th' 
+                                ? 'ฉายวันหยุดพิเศษ!' 
+                                : 'Special Holiday Screening!';
+                            
+                            const starTag = isStarred ? `<div class="mt-2 text-xs text-primary-accent font-medium flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.637-.921 1.936 0l3.07 9.492a1 1 0 00.954.686h9.916a1 1 0 00.596-.341l-7.234-5.257a1 1 0 00-.363-1.118l3.07-9.492z" /></svg>${starTagText}</div>` : '';
+                            
+                            const holidayTag = isHoliday && !isStarred ? `<div class="mt-2 text-xs text-primary-accent font-medium">${holidayTagText}</div>` : '';
+
+                            return `
+                                <div class="${classes} ${borderColor} ${bgColor} flex flex-col justify-between shadow-sm hover:shadow-md transition duration-200">
+                                    <div>
+                                        <div class="text-base font-semibold ${dateColor} font-heading mb-1 uppercase">${day} ${dateNum}</div>
+                                        <div class="text-lg font-bold text-text-color font-body">${movieName}</div>
+                                    </div>
+                                    ${starTag}
+                                    ${holidayTag}
+                                </div>
+                            `;
+                        }
+                        
+                        // Movie Data (unchanged)
+                        const movies = [
+                            { date: "Fri 5", title: "Despicable Me 1*" },
+                            { date: "Sat 6", title: "Notting hill" },
+                            { date: "Fri 12", title: "How to train your dragon*" },
+                            { date: "Sat 13", title: "About time" },
+                            { date: "Fri 19", title: "Jurassic Park (1993)" },
+                            { date: "Sat 20", title: "Jurassic World (2015)" },
+                            { date: "Thu 25", title: "Love actually", holiday: true },
+                            { date: "Fri 26", title: "The holiday", holiday: true },
+                            { date: "Sat 27", title: "Top gun", holiday: true },
+                            { date: "Sun 28", title: "Fast Five", holiday: true },
+                            { date: "Mon 29", title: "Catch me if you can", holiday: true },
+                            { date: "Tue 30", title: "Notting hill", holiday: true },
+                            { date: "Wed 31", title: "Harry potter 1*", holiday: true },
+                            { date: "Thu 1", title: "TBD", special: true },
+                            { date: "Fri 2", title: "TBD", special: true },
+                            { date: "Sat 3", title: "TBD", special: true },
+                        ];
+
+                        function renderSchedule(lang) {
+                            const scheduleContainer = document.getElementById('schedule-grid');
+                            if (scheduleContainer) {
+                                scheduleContainer.innerHTML = movies.map(m => createMovieItem(m.date, m.title, m.holiday, lang)).join('');
+                            }
+                        }
+
+                        // Initialization on load
+                        window.onload = function() {
+                            // Check for stored language preference, default to THAI
+                            // --- CHANGED: Default language is now 'th' ---
+                            const savedLang = localStorage.getItem('movieathill_lang') || 'th';
+                            setLanguage(savedLang);
+                        };
+                    </script>
+                    
+                    <div id="schedule-grid" class="contents">
+                        </div>
+
+                </div>
+                <p class="mt-6 text-sm text-gray-500 text-center font-body">
+                    <span class="lang-th">* คือภาพยนตร์สำหรับครอบครัว/วันหยุด.</span>
+                    <span class="lang-en">* Indicates a Family/Holiday Classic Screening.</span>
+                </p>
+                <p class="mt-1 text-sm text-gray-500 text-center font-body">
+                    <span class="lang-th">วันที่ Thu 1, Fri 2, Sat 3 คือตารางฉายของเดือนมกราคม 2026.</span>
+                    <span class="lang-en">Dates Thu 1, Fri 2, Sat 3 refer to January 2026.</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="registration" class="text-center mb-10 bg-primary-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+            <h2 class="text-2xl font-heading uppercase text-white mb-3 font-semibold">
+                <span class="lang-th">จองที่นั่งของคุณ!</span>
+                <span class="lang-en">BOOK YOUR SPOT!</span>
+            </h2>
+            <p class="text-xl text-white mb-6 font-light font-body">
+                <span class="lang-th">บัตร Early bird มีจำนวนจำกัด.</span>
+                <span class="lang-en">Early bird tickets available now.</span>
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGfcuDV7mw8_KhfFYZ5YRoUme9VgIkRZDQq7tU0MhZWSYNIQ/viewform?usp=dialog" target="_blank" class="inline-block px-10 py-3 bg-white text-primary-accent font-bold text-lg rounded-lg shadow-md transition duration-300 hover:bg-gray-100">
+                <span class="lang-th">ลงทะเบียนผ่าน Google Form</span>
+                <span class="lang-en">Register via Google Form</span>
+            </a>
+        </section>
+
+        <section id="location" class="mb-12">
+            <h2 class="text-xl font-heading uppercase text-center mb-6 text-primary-accent font-semibold">
+                <span class="lang-th">สถานที่</span>
+                <span class="lang-en">LOCATION</span>
+            </h2>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-secondary-light flex flex-col items-center space-y-4">
+                <p class="text-lg text-gray-600 mb-2 text-center font-body">
+                    <span class="lang-th">มาเจอกันที่ Movie@Hill! คลิกลิงก์ด้านล่างเพื่อดูแผนที่.</span>
+                    <span class="lang-en">Find us at the hill! Click the link below for directions.</span>
+                </p>
+                <a href="https://maps.app.goo.gl/dEGGTVHrX9fM1kKG9" target="_blank" class="inline-flex items-center px-6 py-3 bg-gray-700 text-white font-semibold rounded-lg shadow-md hover:bg-gray-800 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="lang-th">ดูบน Google Maps</span>
+                    <span class="lang-en">View on Google Maps</span>
+                </a>
+                
+                <div class="w-full h-px bg-secondary-light my-2"></div>
+
+                <p class="text-lg text-gray-600 mb-2 text-center font-body">
+                    <span class="lang-th">ติดต่อสอบถามเพิ่มเติมทาง Line Official.</span>
+                    <span class="lang-en">Contact us for more information via Line Official.</span>
+                </p>
+                <a href="https://line.me/R/ti/p/@885tztdx" target="_blank" class="inline-flex items-center px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition duration-300">
+                    <span class="lang-th">เพิ่มเพื่อนใน Line: Movie at hill</span>
+                    <span class="lang-en">Add on Line: Movie at hill</span>
+                </a>
+                </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-white p-4 mt-8 text-center text-gray-500 text-sm border-t border-secondary-light font-body">
+        © 2025 Movie@Hill. All rights reserved. | 
+        <span class="lang-th">โปรแกรมเดือนธันวาคมฉบับย่อ.</span>
+        <span class="lang-en">Minimal December Program.</span>
+    </footer>
+
+</body>
+</html>

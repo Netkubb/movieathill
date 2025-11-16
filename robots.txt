@@ -1,0 +1,6 @@
+# Disallow everything in the root except index.html/default file
+Disallow: /*.html
+
+# Allow the specific root files (Homepage)
+Allow: /index.html
+Allow: /blog/

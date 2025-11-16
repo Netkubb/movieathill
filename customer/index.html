@@ -151,7 +151,7 @@
           <tr><td>ชื่อ (Name)</td><td id="name"></td></tr>
           <tr><td>อายุ (Age)</td><td id="age"></td></tr>
           <tr><td>สมาชิกทั้งหมด (Total Members)</td><td id="members"></td></tr>
-          <tr><td>ยอดรวมชำระ (Total Amount)</td><td id="totalAmount"></td></tr>
+          <!-- <tr><td>ยอดรวมชำระ (Total Amount)</td><td id="totalAmount"></td></tr> -->
         </table>
         
         <h2>Contact & Payment</h2>
@@ -223,7 +223,11 @@
         infoEl.style.display = "block";
         
         const members = Number(data["จำนวนสมาชิกทั้งหมด (รวมตัวเอง)"]) || 1; 
-        const totalAmount = members * 200;
+        let price = 250;
+        if(data["ประทับเวลา"].split(",")[0].split("/").reverse().join("") <= 20251115){
+          price = 200
+        }
+        const totalAmount = members * price;
         
         setField("name", data["ชื่อ - นามสกุล "]);
         setField("age", data["อายุ"]);

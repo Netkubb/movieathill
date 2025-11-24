@@ -401,6 +401,25 @@ body {
     /* Add any other styling like color, font-weight, etc. */
 }
 
+.movie-card-christmas{
+    overflow-x: visible;
+    height: 100% !important;
+    max-height: 297px !important;
+    max-width: 255px !important;
+    margin-right: -9%;
+    margin-top: -1%;
+}
+
+.movie-card-new{
+    width: 125% !important;
+    overflow-x: visible;
+    height: 100% !important;
+    margin-right: -25% !important;
+    max-height: 297px !important;
+    max-width: 268px !important;
+    margin-top: -3%;
+}
+
 /* --- Mobile Responsiveness (Basic) --- */
 @media (max-width: 768px) {
     /* .header {

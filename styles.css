@@ -539,3 +539,104 @@ body {
         font-size: 0.72rem;
     }
 }
+
+/* Keep the full 4–3–2 poster composition visible on wide, landscape screens. */
+@media (min-width: 1200px) and (max-height: 1350px) {
+    .main-menu {
+        padding-top: 66px;
+        padding-bottom: 8px;
+    }
+
+    .pricing-section {
+        padding: 18px 0 22px;
+    }
+
+    .pricing-title {
+        font-size: 2.4rem;
+        margin-bottom: 16px;
+    }
+
+    .pricing-cards {
+        max-width: 980px;
+        gap: 22px;
+    }
+
+    .card {
+        max-width: 470px;
+        min-height: 126px;
+        padding: 14px 28px;
+        border-radius: 18px;
+    }
+
+    .card h2 {
+        font-size: 1.6rem;
+        margin-bottom: 6px;
+    }
+
+    .price {
+        font-size: 2rem;
+        margin-bottom: 7px;
+    }
+
+    .note {
+        font-size: 0.7rem;
+    }
+
+    .movies-lineup-section {
+        margin-top: 16px;
+        padding: 22px 4% 26px;
+    }
+
+    .lineup-title {
+        font-size: 2rem;
+    }
+
+    .lineup-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+    }
+
+    .movies-grid {
+        gap: 1rem;
+    }
+
+    .lineup-row {
+        gap: 1.15rem;
+    }
+
+    .lineup-row-four {
+        max-width: 770px;
+    }
+
+    .lineup-row-three {
+        max-width: 575px;
+    }
+
+    .lineup-row-two {
+        max-width: 375px;
+    }
+
+    .movie-card {
+        max-width: 175px;
+    }
+
+    .day-tag {
+        top: -12px;
+        left: -7px;
+        padding: 6px 10px 5px;
+        border-width: 3px;
+        font-size: 0.88rem;
+    }
+
+    .poster-frame {
+        padding: 8px 8px 6px;
+        border-width: 3px;
+        box-shadow: 0 3px 0 rgba(16, 11, 13, 0.22);
+    }
+
+    .movie-title {
+        min-height: 2.25em;
+        padding-top: 5px;
+        font-size: 0.68rem;
+    }
+}

@@ -30,100 +30,94 @@
     <section class="pricing-section">
         <h1 class="pricing-title">PRICING</h1>
         <div class="pricing-cards">
-            <!-- <div class="card early-bird">
-                <h2>EARLY BIRD</h2>
-                <p class="price">200 ฿ / person</p>
-                <p class="note">SECURE YOUR SPOT ONLINE BEFORE THE EVENT DAY!</p>
-            </div> -->
-            <div class="card walk-in" style="cursor: pointer;" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScKsbfYfAnNDr4k0ooC70edF3eelgYwHb2rig_DsjzjCWYwZQ/viewform?usp=header';">
-                <!-- <h2>WALK-IN</h2> -->
-                <p class="price">250 ฿ / person</p>
-                <p class="note">TICKETS AVAILABLE AT THE DOOR, SUBJECT TO SEATING AVAILABILITY.</p>
-            </div>
+            <a class="card pre-sale" href="https://docs.google.com/forms/d/e/1FAIpQLScKsbfYfAnNDr4k0ooC70edF3eelgYwHb2rig_DsjzjCWYwZQ/viewform?usp=header" target="_blank">
+                <h2>PRE-SALE</h2>
+                <p class="price">270 ฿ <span>/ person</span></p>
+                <p class="note">AVAILABLE NOW – 30 NOVEMBER</p>
+            </a>
+            <a class="card regular" href="https://docs.google.com/forms/d/e/1FAIpQLScKsbfYfAnNDr4k0ooC70edF3eelgYwHb2rig_DsjzjCWYwZQ/viewform?usp=header" target="_blank">
+                <h2>REGULAR</h2>
+                <p class="price">300 ฿ <span>/ person</span></p>
+                <p class="note">1 DECEMBER ONWARDS</p>
+            </a>
         </div>
     </section>
     
     <section class="movies-lineup-section">
         <h2 class="lineup-title">MOVIES LINEUP</h2>
-        <p class="lineup-subtitle">DECEMBER 2025</p>
+        <p class="lineup-subtitle">DECEMBER 2026 – JANUARY 2027</p>
 
         <div class="movies-grid">
-            <div class="movie-card">
-                <!-- <span class="day-tag green-tag">FRI 5</span> -->
-                <img src="images/web-13.png" alt="Despicable Me 1" class="movie-poster">
-                <!-- <p class="movie-title">DESPICABLE ME 1</p> -->
-            </div>
-            <div class="movie-card">
-                <!-- <span class="day-tag">SAT 6</span> -->
-                <img src="images/web-15.png" alt="Nothing Hill" class="movie-poster" style="max-width: 215px;">
-                <!-- <p class="movie-title">NOTHING HILL</p> -->
-            </div>
-            <div class="movie-card">
-                <!-- <span class="day-tag">SUN 7</span> -->
-                <img src="images/web-14-1.png" alt="Don't Breathe" class="movie-poster">
-                <!-- <p class="movie-title">DON'T BREATHE</p> -->
-            </div>
-            <div class="movie-card">
-                <!-- <span class="day-tag">FRI 12</span> -->
-                <img src="images/web-16.png" alt="About Time" class="movie-poster">
-                <!-- <p class="movie-title">ABOUT TIME</p> -->
-            </div>
-
-            <div class="movie-card">
-                <!-- <span class="day-tag">FRI 19</span> -->
-                <img src="images/web-17.png" alt="Jurassic Park" class="movie-poster">
-                <!-- <p class="movie-title">JURASSIC PARK (CHINESE)</p> -->
-            </div>
-            <div class="movie-card">
-                <!-- <span class="day-tag">SAT 20</span> -->
-                <img src="images/web-18.png" alt="Jurassic World" class="movie-poster">
-                <!-- <p class="movie-title">JURASSIC WORLD (DUBAI)</p> -->
-            </div>
-            <div class="movie-card movie-card-christmas">
-                <!-- <span class="day-tag red-tag">TUE 23</span> -->
-                <img src="images/web-19.png" alt="Love Actually" class="movie-poster">
-                <!-- <p class="movie-title">LOVE ACTUALLY</p> -->
-            </div>
-            <div class="movie-card">
-                <!-- <span class="day-tag">FRI 26</span> -->
-                <img src="images/web-20.png" alt="The Holiday" class="movie-poster">
-                <!-- <p class="movie-title">THE HOLIDAY</p> -->
+            <div class="lineup-row lineup-row-four">
+                <article class="movie-card">
+                    <span class="day-tag">SAT 5</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-notting-hill.jpg" alt="Notting Hill movie poster" class="movie-poster">
+                        <h3 class="movie-title">NOTTING HILL</h3>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <span class="day-tag">FRI 11</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-how-to-lose-a-guy.jpg" alt="How to Lose a Guy in 10 Days movie poster" class="movie-poster">
+                        <h3 class="movie-title">HOW TO LOSE A GUY IN 10 DAYS</h3>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <span class="day-tag">SAT 12</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-about-time.jpg" alt="About Time movie poster" class="movie-poster">
+                        <h3 class="movie-title">ABOUT TIME</h3>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <span class="day-tag">SAT 19</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-the-holiday.jpg" alt="The Holiday movie poster" class="movie-poster">
+                        <h3 class="movie-title">THE HOLIDAY</h3>
+                    </div>
+                </article>
             </div>
 
-            <div class="movie-card">
-                <!-- <span class="day-tag">SAT 27</span> -->
-                <img src="images/web-21.png" alt="Top Gun" class="movie-poster">
-                <!-- <p class="movie-title">TOP GUN</p> -->
-            </div>
-            <div class="movie-card">
-                <!-- <span class="day-tag red-tag">SUN 28</span> -->
-                <img src="images/web-22.png" alt="Fast Five" class="movie-poster">
-                <!-- <p class="movie-title">FAST FIVE</p> -->
-            </div>
-            <div class="movie-card">
-                <!-- <span class="day-tag">MON 29</span> -->
-                <img src="images/web-23.png" alt="Catch Me If You Can" class="movie-poster">
-                <!-- <p class="movie-title">CATCH ME IF YOU CAN</p> -->
-            </div>
-            <div class="movie-card">
-                <!-- <span class="day-tag">TUE 30</span> -->
-                <img src="images/web-24.png" alt="Nothing Hill" class="movie-poster">
-                <!-- <p class="movie-title">NOTHING HILL</p> -->
+            <div class="lineup-row lineup-row-three">
+                <article class="movie-card">
+                    <span class="day-tag">FRI 25</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-love-actually.jpg" alt="Love Actually movie poster" class="movie-poster">
+                        <h3 class="movie-title">LOVE ACTUALLY</h3>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <span class="day-tag">SAT 26</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-home-alone-1.jpg" alt="Home Alone movie poster" class="movie-poster">
+                        <h3 class="movie-title">HOME ALONE 1</h3>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <span class="day-tag">WED 30</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-notting-hill.jpg" alt="Notting Hill movie poster" class="movie-poster">
+                        <h3 class="movie-title">NOTTING HILL</h3>
+                    </div>
+                </article>
             </div>
 
-            <div class="movie-card">
-                <!-- <span class="day-tag blue-tag">WED 31</span> -->
-                <img src="images/web-25.png" alt="Harry Potter 1" class="movie-poster">
-                <!-- <p class="movie-title">HARRY POTTER 1</p> -->
-            </div>
-            <div class="movie-card movie-card-new">
-                <img src="images/web-02-18.png" alt="How to lose a guy in 10 days" class="movie-poster">
-            </div>
-            <div class="movie-card movie-card-new">
-                <img src="images/web-02-19.png" alt="Back to the Future 1" class="movie-poster">
-            </div>
-            <div class="movie-card movie-card-new">
-                <img src="images/web-02-20.png" alt="About Time" class="movie-poster">
+            <div class="lineup-row lineup-row-two">
+                <article class="movie-card">
+                    <span class="day-tag">DEC 31</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-home-alone-2.jpg" alt="Home Alone 2 movie poster" class="movie-poster">
+                        <h3 class="movie-title">HOME ALONE 2</h3>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <span class="day-tag">JAN 1</span>
+                    <div class="poster-frame">
+                        <img src="images/posters/poster-about-time.jpg" alt="About Time movie poster" class="movie-poster">
+                        <h3 class="movie-title">ABOUT TIME</h3>
+                    </div>
+                </article>
             </div>
         </div>
     </section>

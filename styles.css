@@ -223,31 +223,31 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2.75rem;
-    max-width: 1380px;
+    max-width: 1260px;
     margin: 0 auto;
 }
 
 .lineup-row {
+    --lineup-gap: clamp(1rem, 3vw, 2.5rem);
     display: grid;
     justify-content: center;
-    gap: clamp(1rem, 3vw, 2.5rem);
+    gap: var(--lineup-gap);
     width: 100%;
     margin: 0 auto;
 }
 
 .lineup-row-four {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    max-width: 1260px;
 }
 
 .lineup-row-three {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    max-width: 940px;
+    width: calc(75% - (var(--lineup-gap) / 4));
 }
 
 .lineup-row-two {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 620px;
+    width: calc(50% - (var(--lineup-gap) / 2));
 }
 
 .movie-card {

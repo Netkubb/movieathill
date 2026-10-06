@@ -482,8 +482,10 @@ body {
     }
 
     .card {
-        width: 80%;
-        min-height: 0;
+        flex: 0 0 auto;
+        width: 86%;
+        min-height: 140px;
+        padding: 18px 24px;
     }
 
     .movies-lineup-section {
@@ -493,20 +495,27 @@ body {
     }
 
     .movies-grid {
-        gap: 2.25rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem 1rem;
     }
 
     .lineup-row,
     .lineup-row-four,
     .lineup-row-three,
     .lineup-row-two {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 2rem 1rem;
+        display: contents;
     }
 
     .lineup-row-three .movie-card:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .lineup-row-two .movie-card:last-child {
         grid-column: 1 / -1;
         width: calc(50% - 0.5rem);
+        justify-self: center;
     }
 
     .movie-card {
